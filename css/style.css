@@ -1,0 +1,29 @@
+/* imports */
+
+@import url( 'reset.css' )
+
+/* Global styles */
+html{
+	overflow-y:scroll;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* Header */
+body{
+	border-top: 4px solid #333;
+}
+
+header[role='banner']{
+	border-bottom: 1px solid #fff;
+	position: relative;
+}
+
+/*whoa whoa what is this???*/
+header[role='banner']::before{
+	bottom:0;
+	border-bottom: 1px solid #D7D7D7;
+	content: ".";
+}
+
+/* Footer */
